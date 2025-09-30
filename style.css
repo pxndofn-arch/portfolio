@@ -136,3 +136,27 @@ body.scrolled .nav{backdrop-filter:saturate(140%) blur(8px); background:rgba(16,
 /* project card hover */
 .proj{transition:transform .15s ease, box-shadow .15s ease}
 .proj:hover{transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.35)}
+
+/* ==== Fix: features heading + grid ===== */
+.features{display:block}                 /* was een grid -> nu container */
+.features .section-title{
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.features-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 12px 0 48px;
+}
+@media (max-width: 900px){
+  .features-grid{ grid-template-columns: 1fr; }
+}
+
+/* Optioneel: utility als je later iets sr-only wilt maken */
+.sr-only{
+  position:absolute!important; width:1px!important; height:1px!important;
+  padding:0!important; margin:-1px!important; overflow:hidden!important;
+  clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important;
+}
