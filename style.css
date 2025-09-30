@@ -103,3 +103,11 @@ input:focus,textarea:focus{outline:2px solid rgba(var(--accent-rgb),.5); border-
 @media (max-width: 900px){
   .features,.grid{grid-template-columns:1fr}
 }
+/* Week-1 polish */
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 80px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid rgba(255,123,0,.6);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
