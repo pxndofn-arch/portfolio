@@ -119,3 +119,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline-offset: 2px;
   border-radius: 10px;
 }
+
+/* ——— Week-1 polish ——— */
+.skip{
+  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip:focus{
+  position:fixed; left:16px; top:16px; width:auto; height:auto; padding:8px 12px;
+  background:#111; color:#fff; border-radius:8px; z-index:9999; outline:2px solid rgba(255,123,0,.6);
+}
+
+/* sticky nav + blur bij scroll */
+.nav{position:sticky; top:0; z-index:50}
+body.scrolled .nav{backdrop-filter:saturate(140%) blur(8px); background:rgba(16,16,22,.6); border-bottom:1px solid #1f1f25}
+
+/* project card hover */
+.proj{transition:transform .15s ease, box-shadow .15s ease}
+.proj:hover{transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.35)}
