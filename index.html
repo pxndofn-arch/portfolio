@@ -3,18 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mijn Portfolio</title>
+  <title>Emra - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welkom op mijn portfolio!</h1>
-  <p>Ik ben Emra, beginnende AI Applications Engineer 🚀</p>
+  <header class="hero">
+    <div class="logo">EMRA<span>DEV</span></div>
+    <h1>Welkom op mijn Portfolio</h1>
+    <p>Ik bouw moderne webapps & AI-projecten 🚀</p>
+    <div class="buttons">
+      <a href="#projects" class="btn primary">Bekijk Projecten</a>
+      <a href="#contact" class="btn secondary">Contact</a>
+    </div>
+  </header>
 
-  <form onsubmit="alert('Bedankt voor je bericht!'); return false;">
-    <label>Naam: <input type="text" required></label><br>
-    <label>Email: <input type="email" required></label><br>
-    <label>Bericht: <textarea required></textarea></label><br>
-    <button type="submit">Versturen</button>
-  </form>
+  <main>
+    <section id="projects" class="section">
+      <h2>Projecten</h2>
+      <p>Binnenkort zie je hier mijn AI- en webprojecten.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form onsubmit="alert('Bedankt voor je bericht!'); return false;">
+        <input type="text" placeholder="Naam" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Bericht" required></textarea>
+        <button type="submit">Verstuur</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Emra · <a href="https://github.com/pxndofn-arch">GitHub</a></p>
+  </footer>
 </body>
 </html>
